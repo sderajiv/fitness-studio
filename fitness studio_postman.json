@@ -1,0 +1,86 @@
+{
+    "info": {
+        "_postman_id": "7c4060a3-9a4a-4e10-9eb8-1471c4a2af1d",
+        "name": " fitness studio",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Book",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:5000/book_class",
+                    "path": [
+                        "book_class"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"class_id\": 1,\n  \"client_name\": \"Rajiv\",\n  \"client_email\": \"rajivrr@gmail.com\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Get class",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:5000/get_classes",
+                    "path": [
+                        "get_classes"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get_bookings",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:5000/get_classes?email=rajivrrr@gmail.com",
+                    "query": [
+                        {
+                            "key": "email",
+                            "value": "rajivrrr@gmail.com"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "get_classes"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}
