@@ -58,6 +58,7 @@ POST /book_class
 3. Get Bookings by Email
 GET /get_bookings?email=enter booked client_email
 
+Postman Collection also there just download import and use locally
 
 cheked loom video link
 https://www.loom.com/share/c48f45287608491eafba126f14e178f8?sid=a5bb4d60-1eca-4b15-bba9-665bf02b0c37
